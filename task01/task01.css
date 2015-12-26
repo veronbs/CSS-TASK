@@ -1,0 +1,16 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}/*将元素的margin和padding设置为零来覆盖浏览器样式*/
+
+.wrapper{
+    max-width: 640px;
+    margin: 50px auto;
+}
+.box {
+    margin: 1% 0 0 1%;
+    padding: 16%;/*师兄的写法是width：32%；padding：16% 0；*/
+    float: left;
+    background-color: orange;
+    border-radius: 10%;/*圆角*/
+}
