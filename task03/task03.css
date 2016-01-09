@@ -3,18 +3,24 @@
     padding: 0px;
 }
 .header{
-    height:8.02%;
     width:auto;
-    padding: 2.37% 0 2.37% 0;
+    padding: 1% 0 1% 0;
     background: #22292c;
 }
-.z{  float: left;  }
-.y{  float: right;  }
-.text{
-    width: auto;
+.z{
+    float: left;
 }
-.text h1{
-    font-size: 2em;
+.y{
+    float: right;
+}
+.cl{
+    clear: both;
+}
+.text{
+}
+.text span{
+    display: block;
+    font-size: 200%;
     color: white;
     text-align: center;
 }
@@ -29,28 +35,37 @@
     padding: 0.73% 0 0 2.92%;
 }
 .logo{
-    padding: 1.5% 0 7.5% 0;
+    padding: 10px 0 50px 0;
 }
 .content {
-    width: 460px;
-    height: 100%;
+    max-width: 460px;
     margin: 0 auto auto auto;
     color: #fff;
-    font-size: 2em;
-    line-height: 200%;
+    font-size: 200%;
+    line-height: 150%;
 }
 .button{
-    width: 460px;
-    height: 360px;
+    position: relative;
+    max-width: 460px;
+    padding-bottom: 15%;
     margin: 0 auto auto auto;
     color: #fff;
-    font-size: 2em;
+    font-size: 180%;
 }
 #b_l{
-    float: left;
+    position: absolute;
+    left: 0;
     padding: 20% 0 10% 50px;
 }
 #b_r{
     float: right;
     padding: 20% 50px 10% 0;
+}
+.button img {
+    height: 80px;
+}
+@media screen and (max-width:550px) {
+    .content{
+        font-size: 150%;
+    }
 }
