@@ -116,7 +116,7 @@ li{
     margin: 3% 2% 3% 2%;
     background-color: #fbb435;
 }
-@media screen and (max-width:550px) {
+    /*@media screen and (max-width:550px) {
     .footer div {
         display: block;
         width: 80%;
@@ -128,5 +128,4 @@ li{
     .footer #bt_b{
         padding: 2% ;
         margin: 3% auto;
-    }
-}
+    }*/
