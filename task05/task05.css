@@ -18,19 +18,25 @@
     }
 }
 body{
-    background-color: #f0f0f0;
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
 }
-header{
+#top,#top2{
     max-width: 640px;
     width: 100%;
     margin: 0 auto;
     padding: 0 0;
     background-color: #29bde0;
 }
-#phone{
+#phone,#phone2{
     width: 100%;
 }
-#menu{
+#switchPoint{
+    width: 10%;
+}
+#switchPoint2{
+    visibility: hidden;
     width: 10%;
 }
 .wrapper{
@@ -102,4 +108,29 @@ li{
     right: 2%;
     top: 48%;
     height: 7%;
+}
+/*********************以下是关于弹出菜单样式********************/
+#menupage  {
+
+}
+#menupage li {
+    width: 70%;
+    position: relative;
+    z-index: 1;
+    border-bottom: solid 1px #E8E8E8;
+}
+.icon{
+    position: absolute;
+    height: 5em;
+}
+.more{
+    position: absolute;
+    right: 0;
+    height: 5em;
+}
+#menupage span{
+    color:#69d1e9 ;
+    font-size: 200%;
+    line-height: 288%;
+    padding: 0 0 0 2.5em;
 }

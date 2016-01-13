@@ -7,41 +7,75 @@
     <title>常见的手机导航菜单</title>
 </head>
 <body>
-    <!--头部菜单导航和手机状态-->
-    <header>
-        <img id="phone" src="images/phone.png" >
-        <a href=""><img id="menu" src="images/menu.png"></a>
-    </header>
-    <!--页面-->
-    <div class="wrapper">
-        <!--上次游戏-->
-        <div class="lastgame">
-            <span>上次游戏，捉鬼猜词版</span>
-            <a href=""><img src="images/next.png"></a>
-        </div>
-        <!--模式选择-->
-        <div class="start">
-            <div class="name">捉鬼游戏</div>
-            <div class="model">
-                <ul>
-                    <li>
-                        <div id="first" class="model_name">简化版</div>
-                        <div class="content">有1133个用户正在玩此款游戏</div>
-                    </li>
-                    <li>
-                        <div class="model_name">猜词版</div>
-                        <div class="content">有1133个用户正在玩此款游戏</div>
-                    </li>
-                    <li>
-                        <div class="model_name">白痴版</div>
-                        <div class="content">有1133个用户正在玩此款游戏</div>
-                    </li>
-                </ul>
+    <!--主页面-->
+    <div id="mainpage" style="position: absolute; background-color: rgb(240, 240, 240); z-index: 2;">
+        <!--头部菜单导航和手机状态-->
+        <header id="top">
+            <img id="phone" src="images/phone.png" >
+            <img id="switchPoint" src="images/menu.png" onclick="switchSysBar()" >
+        </header>
+        <!--页面-->
+        <div class="wrapper">
+            <!--上次游戏-->
+            <div class="lastgame">
+                <span>上次游戏，捉鬼猜词版</span>
+                <a href=""><img src="images/next.png"></a>
             </div>
-            <a href=""><img id="nextpage" src="images/nextpage.png"></a>
-            <!--底部状态-->
-            <img class="footer" src="images/footer.png"></div>
+            <!--模式选择-->
+            <div class="start">
+                <div class="name">捉鬼游戏</div>
+                <div class="model">
+                    <ul>
+                        <li>
+                            <div id="first" class="model_name">简化版</div>
+                            <div class="content">有1133个用户正在玩此款游戏</div>
+                        </li>
+                        <li>
+                            <div class="model_name">猜词版</div>
+                            <div class="content">有1133个用户正在玩此款游戏</div>
+                        </li>
+                        <li>
+                            <div class="model_name">白痴版</div>
+                            <div class="content">有1133个用户正在玩此款游戏</div>
+                        </li>
+                    </ul>
+                </div>
+                <a href=""><img id="nextpage" src="images/nextpage.png"></a>
+                <!--底部状态-->
+                <img class="footer" src="images/footer.png">
+            </div>
         </div>
     </div>
+    <!--菜单页-->
+    <div id="menupage">
+        <header id="top2">
+            <img id="phone2" src="images/phone.png" >
+            <img id="switchPoint2" src="images/menu.png" >
+        </header>
+        <ul>
+            <li>
+                <img class="icon" src="images/notice.png">
+                <span>公告</span>
+                <img class="more" src="images/more.png">
+            </li>
+            <li>
+                <img class="icon" src="images/setting.png">
+                <span>设置</span>
+                <img class="more" src="images/more.png">
+            </li>
+            <li>
+                <img class="icon" src="images/help.png">
+                <span>帮助</span>
+                <img class="more" src="images/more.png">
+            </li>
+            <li>
+                <img class="icon" src="images/about.png">
+                <span>关于</span>
+                <img class="more" src="images/more.png">
+            </li>
+        </ul>
+    </div>
+
 </body>
+<script src="task05.js" type="text/javascript"></script>
 </html>
